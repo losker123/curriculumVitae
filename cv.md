@@ -22,7 +22,7 @@ An application on WinUI 3 that provides an opportunity to study and test your kn
 
 ## Code example
 Usage example Semaphore
-```
+```csharp
     static Semaphore semaphore = new Semaphore(1, 1); 
     
     for (int i = 1; i <= 3; i++)
