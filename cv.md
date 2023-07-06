@@ -6,9 +6,11 @@
 / [Vk](https://vk.com/losker1)
 
 # About me
-I am a second-year student at the Faculty of Computer Science and live in Belarus. My main area of interest is related to software development, especially using the C# programming language and the WinUI3 framework.
-Despite the fact that I do not have any work experience or internship yet, I am actively engaged in various projects in order to accumulate sufficient experience. 
-However, in addition to specific technologies and tools, I also focus on developing my logical thinking and problem solving skills. I am actively engaged in solving various tasks, which helps me develop analytical and problem-oriented skills.
+I am currently a second-year student at the Faculty of Computer Science in Belarus. At this stage of my education, I am drawn towards the field of software development, with a particular interest in utilizing the C# programming language and the WinUI3 framework. While I have yet to gain practical work experience or participate in an internship, I am dedicated to participating in various projects to accumulate valuable hands-on experience.
+
+Alongside my focus on specific technologies and tools, I am also committed to enhancing my logical thinking and problem-solving abilities. I actively involve myself in solving a variety of tasks, as this approach aids in the development of my analytical and solution-oriented skills.
+
+Although I am currently inclined towards software development, I haven't fully decided on the specific direction I wish to pursue within the field. As I continue my studies and gain more exposure to different aspects of computer science, I am keeping an open mind and exploring various possibilities to determine my true passion and specialization.
 
 ## My stack of technologies 
  - C# 
