@@ -23,28 +23,33 @@ An application on WinUI 3 that provides an opportunity to study and test your kn
 ## Code example
 Usage example Semaphore
 ```csharp
-    static Semaphore semaphore = new Semaphore(1, 1); 
-    
-    for (int i = 1; i <= 3; i++)
+    static Semaphore semaphore = new Semaphore(0, 3);
+   
+    for (int i = 1; i <= 5; i++)
     {
-        Thread thread = new Thread(EnterCriticalSection);
+        Thread thread = new Thread(DoWork);
         thread.Name = "Поток " + i;
         thread.Start();
     }
 
+    Console.WriteLine("Нажмите Enter для продолжения...");
+    Console.ReadLine();
+
+    semaphore.Release(3);
+
+    Console.WriteLine("Нажмите Enter для завершения...");
     Console.ReadLine();
     
-    static void EnterCriticalSection()
+    static void DoWork()
     {
-        Console.WriteLine(Thread.CurrentThread.Name + " ждет разрешения.");
-        semaphore.WaitOne(); 
+        Console.WriteLine(Thread.CurrentThread.Name + " ожидает разрешения.");
+        semaphore.WaitOne();
 
-        Console.WriteLine(Thread.CurrentThread.Name + " входит в критическую секцию.");
-        Thread.Sleep(2000); 
+        Console.WriteLine(Thread.CurrentThread.Name + " получил разрешение и выполняет работу.");
+        Thread.Sleep(2000);
 
-        Console.WriteLine(Thread.CurrentThread.Name + " покидает критическую секцию.");
+        Console.WriteLine(Thread.CurrentThread.Name + " завершил работу и освободил разрешение.");
         semaphore.Release();
-
-        Console.WriteLine(Thread.CurrentThread.Name + " освободил разрешение.");
     }
+}
 ```
